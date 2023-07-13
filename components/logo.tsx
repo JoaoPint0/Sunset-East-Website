@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const Logo = (props) => {
+const Logo = (props :{ base: string; }) => {
 
-    var destination = "/"
+    let destination = "/"
 
     if(props.base){
         destination = props.base

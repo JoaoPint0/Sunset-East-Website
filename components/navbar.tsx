@@ -4,7 +4,7 @@ import { Disclosure } from "@headlessui/react";
 import Logo from "./logo";
 import ContactButton from "./contactButton";
 
-const Navbar = (props) => {
+const Navbar = (props: { base: string; }) => {
   const software = [
     { name:"Portfolio", route: "portfolio"},
     { name:"Blog", route: "blog"}
@@ -15,10 +15,7 @@ const Navbar = (props) => {
     { name:"Destinations", route: "destinations"}
   ];
 
-  /**
-   * @type {any[]}
-   */
-  var navigation = [] 
+  let navigation: {name: string, route:string}[] = [] 
   
   if(props.base.includes("rent")) {
     navigation = rent 
@@ -68,7 +65,7 @@ const Navbar = (props) => {
                       </Link>
                     ))}
                     <div className="py-12">
-                      <ContactButton></ContactButton>
+                      <ContactButton base={`${props.base}`}></ContactButton>
                     </div>
                   </>
                 </Disclosure.Panel>

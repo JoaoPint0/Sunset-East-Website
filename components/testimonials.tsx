@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import Container from "./container";
 
@@ -57,7 +57,7 @@ const Testimonials  = () => {
   );
 }
 
-function Avatar(props) {
+function Avatar(props: {image: StaticImageData, name: string, title: string}) {
   return (
     <div className="flex items-center mt-8 space-x-3">
       <div className="flex-shrink-0 overflow-hidden rounded-full w-10 h-10">
@@ -77,7 +77,7 @@ function Avatar(props) {
   );
 }
 
-function Mark(props) {
+function Mark(props: { children: any }) {
   return (
     <>
       {" "}

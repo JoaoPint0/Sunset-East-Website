@@ -1,6 +1,6 @@
 import React from "react";
 
-const Container = (props: {className: string, children: any}) => {
+const Container = (props :{ className?: string; children: any}) => {
   return (
     <div
       className={`container p-8 mx-auto xl:px-0 ${

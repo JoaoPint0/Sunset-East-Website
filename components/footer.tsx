@@ -4,7 +4,7 @@ import React from "react";
 import Container from "./container";
 import Logo from "./logo";
 
-export default function Footer(props) {
+export default function Footer(props :{ base: string; }){
 
   const software = [
     { name:"Portfolio", route: "portfolio"},
@@ -19,11 +19,8 @@ export default function Footer(props) {
 
   ];
 
-  /**
-   * @type {any[]}
-   */
-  var navigation = [] 
-  var description = ""
+  let navigation = [] 
+  let description = ""
   
   if(props.base.includes("rent")) {
     navigation = rent 

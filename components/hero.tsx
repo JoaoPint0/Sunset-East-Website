@@ -3,7 +3,7 @@ import Container from "./container";
 import heroImg from "../public/img/apps.png";
 import ContactButton from "./contactButton";
 
-const Hero = () => {
+const Hero = (props :{ base: string; }) => {
   return (
     <>
       <Container className="flex flex-wrap ">
@@ -17,7 +17,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <ContactButton/>
+              <ContactButton base={`${props.base}`}/>
             
             </div>
           </div>
