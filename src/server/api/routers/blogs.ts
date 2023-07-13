@@ -4,6 +4,6 @@ import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
 export const blogsRouter = createTRPCRouter({
   getAll: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.blog.findMany();
+    return ctx.prisma.post.findMany();
   }),
 });
