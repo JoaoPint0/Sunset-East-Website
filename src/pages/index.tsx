@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Navbar base=""/>
-      <Hero />
+      <Hero base=""/>
       <SectionTitle
         pretitle="Benefits"
         title=" Why should you hire me">

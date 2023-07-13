@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "./container";
 
-const SectionTitle = (props: {align: string, pretitle: string, title: string, children: any}) => {
+const SectionTitle = (props: {align?: string, pretitle: string, title: string, children: any}) => {
   return (
     <Container
       className={`flex w-full flex-col mt-4 ${
