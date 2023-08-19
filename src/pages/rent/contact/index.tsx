@@ -73,7 +73,7 @@ const Contact: NextPage = () => {
           />
 
           <p className="pb-8 text-gray-400">
-            We're committed to your privacy. Sunset East uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our Privacy Policy.
+            We&apos;re committed to your privacy. Sunset East uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our Privacy Policy.
           </p>
 
         <div className="px-6 py-3 text-white bg-red-600 rounded-full w-fit">

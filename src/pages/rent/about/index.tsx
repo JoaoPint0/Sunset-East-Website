@@ -21,7 +21,7 @@ const About: NextPage = () => {
       <Navbar base="/rent"/>
 
       <HeaderSection title= "Find our Mission." subtitle="ABOUT">
-      Hey there, fellow adventurers and road trippers! We're stoked to introduce you to Sunset East, where we're turning the rental car game on its head and redefining how you hit the road.
+      Hey there, fellow adventurers and road trippers! We&apos;re stoked to introduce you to Sunset East, where we&apos;re turning the rental car game on its head and redefining how you hit the road.
       </HeaderSection>
 
       <AboutSection title="Our Story">
@@ -29,7 +29,7 @@ const About: NextPage = () => {
       </AboutSection>
 
       <AboutSection title="Our Spirit">
-      We're not just any car rental business – we're your partners in adventure. Every vehicle in our kick-ass fleet is handpicked, with me often taking them for a spin personally. We believe that a rental should be as exhilarating as the journey itself. 
+      We&apos;re not just any car rental business – we&apos;re your partners in adventure. Every vehicle in our kick-ass fleet is handpicked, with me often taking them for a spin personally. We believe that a rental should be as exhilarating as the journey itself. 
       </AboutSection>
 
       <AboutSection title="Why Roll With Us?">
@@ -37,7 +37,7 @@ const About: NextPage = () => {
       </AboutSection>
 
       <AboutSection title="Our Dream">
-      Beyond just renting cars, we're all about enabling your escapades. We're building this to be your go-to travel sidekick, so whether you're a spontaneous spirit or a meticulous planner, we've got your back (and your wheels).
+      Beyond just renting cars, we&apos;re all about enabling your escapades. We&apos;re building this to be your go-to travel sidekick, so whether you&apos;re a spontaneous spirit or a meticulous planner, we&apos;ve got your back (and your wheels).
       </AboutSection>
 
       <Footer base="/rent"/>
