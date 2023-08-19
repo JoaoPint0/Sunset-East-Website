@@ -5,13 +5,17 @@ import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
 import { ThemeProvider } from "next-themes";
+import {NextUIProvider} from "@nextui-org/react";
+
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-      <Analytics />
-    </ThemeProvider>
+    <NextUIProvider>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+        <Analytics />
+      </ThemeProvider>
+    </NextUIProvider>
   );
 };
 

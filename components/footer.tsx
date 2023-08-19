@@ -15,6 +15,7 @@ export default function Footer(props :{ base: string; }){
   const rent = [
     { name:"Rental Cars", route: "cars"},
     { name:"Destinations", route: "destinations"},
+    { name:"About", route: "about"},
     { name:"Contact", route: "contact"}
 
   ];

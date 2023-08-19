@@ -12,7 +12,8 @@ const Navbar = (props: { base: string; }) => {
 
   const rent = [
     { name:"Rental Cars", route: "cars"},
-    { name:"Destinations", route: "destinations"}
+    { name:"Destinations", route: "destinations"},
+    { name:"About", route: "about"},
   ];
 
   let navigation: {name: string, route:string}[] = [] 

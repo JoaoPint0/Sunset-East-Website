@@ -19,5 +19,14 @@ const config = {
     defaultLocale: "en",
   },
   experimental:{appDir: true},
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.turo.com',
+        port: '',
+      },
+    ],
+  },
 };
 export default config;
