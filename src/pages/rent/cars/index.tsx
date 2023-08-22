@@ -14,7 +14,7 @@ const Cars: NextPage = () => {
   console.log(data)
 
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <Head>
         <title>Cars</title>
         <meta
@@ -30,14 +30,14 @@ const Cars: NextPage = () => {
         We hand pick the most reliable, low mileage, vehicles for car rentals in Bristol
       </HeaderSection>
 
-      <Container>
+      <Container className="flex-1">
         <div className="gap-2 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
           {data?.map((value) => ( <CarComponent key={value.id}  car={value}/> ))}
         </div>
       </Container>
 
       <Footer base="/rent"/>
-    </>
+    </div>
   );
 };
 

@@ -4,8 +4,6 @@ import Navbar from "components/navbar";
 import Footer from "components/footer";
 import Container from "components/container";
 import ProductSection from "components/productSection";
-import { Card } from "@nextui-org/react";
-import Image from "next/image";
 import WorkSection from "components/workSection";
 
 

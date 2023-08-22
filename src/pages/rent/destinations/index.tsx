@@ -9,7 +9,7 @@ import HeaderSection from "components/header";
 const Destinations: NextPage = () => {
 
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <Head>
         <title>Destinations</title>
         <meta
@@ -25,8 +25,10 @@ const Destinations: NextPage = () => {
         We hand pick our favourite destinations a car ride away in the South West for your next adventure.
       </HeaderSection>
 
+      <div className="flex-1"></div>
+
       <Footer base="/rent"/>
-    </>
+    </div>
   );
 };
 

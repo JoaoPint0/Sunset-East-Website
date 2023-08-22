@@ -6,7 +6,7 @@ import Footer from "components/footer";
 const Rent: NextPage = () => {
 
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <Head>
         <title>Rent</title>
         <meta
@@ -18,8 +18,10 @@ const Rent: NextPage = () => {
 
       <Navbar base="/rent"/>
 
+      <div className="flex-1"></div>
+
       <Footer base="/rent"/>
-    </>
+    </div>
   );
 };
 
