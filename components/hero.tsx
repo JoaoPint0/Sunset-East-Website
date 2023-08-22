@@ -1,24 +1,25 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/apps.png";
-import ContactButton from "./contactButton";
+import ContactButton from "./buttons/contactButton";
+import ResumeButton from "./buttons/resumeButton";
 
 const Hero = (props :{ base: string; }) => {
   return (
     <>
-      <Container className="flex flex-wrap ">
+      <Container className="flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-5xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               Turning Vision Into Reality With Code And Design. 
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            As a skilled mobile developer, I am dedicated to turning ideas into innovative applications. Explore my latest projects and articles, showcasing my expertise in Kotlin, Jetpack Compose and software development.
+              I’m a UK based mobile developer, I am dedicated to turning ideas into innovative applications. Explore my latest projects and articles, showcasing my expertise in Kotlin, Jetpack Compose and Android Architecture.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+              <ResumeButton/>
               <ContactButton base={`${props.base}`}/>
-            
             </div>
           </div>
         </div>

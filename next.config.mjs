@@ -25,6 +25,10 @@ const config = {
         protocol: 'https',
         hostname: 'images.turo.com',
         port: '',
+      },{
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
+        port: '',
       },
     ],
   },

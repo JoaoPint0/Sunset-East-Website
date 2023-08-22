@@ -5,13 +5,12 @@ import Footer from "components/footer";
 import HeaderSection from "components/header";
 
 
-
-const Blog: NextPage = () => {
+const Home: NextPage = () => {
 
   return (
-    <>
+    <div className="h-screen flex flex-col">
       <Head>
-        <title>Blog</title>
+        <title>Sunset East</title>
         <meta
           name="description"
           content="Nextly is a free landing page template built with next.js & Tailwind CSS"
@@ -19,15 +18,17 @@ const Blog: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar base=""/>
+      <Navbar base="/software"/>
 
       <HeaderSection title= "Recent Articles." subtitle="INFORMATIVE">
       A personal quest to become a better creative writer.
       </HeaderSection>
 
-      <Footer base=""/>
-    </>
+      <div className="flex-1"></div>
+      
+      <Footer base="/software"/>
+    </div>
   );
 };
 
-export default Blog;
+export default Home;

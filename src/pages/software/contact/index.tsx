@@ -2,15 +2,15 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Navbar from "components/navbar";
 import Footer from "components/footer";
-import HeaderSection from "components/header";
+import ContactPage from "components/pages/contact";
 
 
-const Portfolio: NextPage = () => {
+const Contact: NextPage = () => {
 
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Contact us</title>
         <meta
           name="description"
           content="Nextly is a free landing page template built with next.js & Tailwind CSS"
@@ -18,15 +18,13 @@ const Portfolio: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar base=""/>
+      <Navbar base="/software"/>
 
-      <HeaderSection title= "Featured Projects." subtitle="TECHNOLOGY">
-      Focused on the experience, driven by the engineering.
-      </HeaderSection>
+      <ContactPage/>
 
-      <Footer base=""/>
+      <Footer base="/software"/>
     </>
   );
 };
 
-export default Portfolio;
+export default Contact;

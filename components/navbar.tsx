@@ -2,11 +2,11 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 import Logo from "./logo";
-import ContactButton from "./contactButton";
+import ContactButton from "./buttons/contactButton";
 
 const Navbar = (props: { base: string; }) => {
   const software = [
-    { name:"Portfolio", route: "portfolio"},
+    { name:"Experience", route: "portfolio"},
     { name:"Blog", route: "blog"}
   ];
 
@@ -20,8 +20,10 @@ const Navbar = (props: { base: string; }) => {
   
   if(props.base.includes("rent")) {
     navigation = rent 
-  } else{
-     navigation = software
+  } else if(props.base.includes("software")) {
+    navigation = software  
+  } else {
+    navigation = []
   }
 
   return (

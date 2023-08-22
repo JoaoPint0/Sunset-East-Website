@@ -2,9 +2,10 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Navbar from "components/navbar";
 import Footer from "components/footer";
+import ContactPage from "components/pages/contact";
 
 
-const Home: NextPage = (props) => {
+const Contact: NextPage = () => {
 
   return (
     <>
@@ -19,9 +20,11 @@ const Home: NextPage = (props) => {
 
       <Navbar base=""/>
 
+      <ContactPage/>
+
       <Footer base=""/>
     </>
   );
 };
 
-export default Home;
+export default Contact;

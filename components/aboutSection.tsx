@@ -3,7 +3,7 @@ import Container from "./container";
 
 const AboutSection = (props: {title: string, children: string}) => {
   return (
-    <Container className={`flex w-full flex-col mt-4 "left"`}>
+    <Container className="flex w-full flex-col mt-4 left">
 
       {props.title && (
         <h2 className="max-w-2xl mt-3 text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl dark:text-white">

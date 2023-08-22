@@ -7,7 +7,7 @@ import Logo from "./logo";
 export default function Footer(props :{ base: string; }){
 
   const software = [
-    { name:"Portfolio", route: "portfolio"},
+    { name:"Experience", route: "portfolio"},
     { name:"Blog", route: "blog"},
     { name:"Contact", route: "contact"}
   ];
@@ -20,15 +20,21 @@ export default function Footer(props :{ base: string; }){
 
   ];
 
-  let navigation = [] 
-  let description = ""
+  let navigation: any[] = [] 
+  let description = "Founded in 2021, Sunset East follows my passion to deliver and build products that impact the user life."
   
   if(props.base.includes("rent")) {
     navigation = rent 
     description = ""
-  } else{
+  } else if(props.base.includes("software")) {
      navigation = software
      description = "As a skilled mobile developer, I am dedicated to turning ideas into innovative applications. Explore my latest projects and articles, showcasing my expertise in Kotlin, Jetpack Compose and software development."
+  }  else {
+   navigation = [
+      { name:"Software", route: "software"},
+      { name:"Rental", route: "rent"},
+      { name:"Contact", route: "contact"}
+    ];
   }
 
   const legal = [
@@ -112,12 +118,11 @@ export default function Footer(props :{ base: string; }){
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a
-            href="https://web3templates.com/"
-            target="_blank"
+          <Link
+            href="/"
             rel="noopener">
             Sunset East Limited.
-          </a>{" "}
+          </Link>{" "}
         </div>
       </Container>
     </div>
