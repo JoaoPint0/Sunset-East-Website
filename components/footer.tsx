@@ -20,7 +20,7 @@ export default function Footer(props :{ base: string; }){
 
   ];
 
-  let navigation: any[] = [] 
+  let navigation: { name: string,  route: string }[] = [] 
   let description = "Founded in 2021, Sunset East follows my passion to deliver and build products that impact the user life."
   
   if(props.base.includes("rent")) {
